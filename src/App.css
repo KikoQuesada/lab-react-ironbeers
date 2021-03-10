@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: #2c3e50;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-content: center;
 }
 
-.App-link {
-  color: #61dafb;
+.btn {
+  box-sizing: border-box;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid $red;
+  border-radius: 0.6em;
+  cursor: pointer;
+  display: flex;
+  align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 20px;
+  padding: 1.2em 2.8em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.btn:hover,
+  .btn:focus {
+    color: #fff;
+    outline: 0;
   }
-  to {
-    transform: rotate(360deg);
+
+.third {
+  border-color: #32c3ff;
+  color: #000;
+  box-shadow: 0 0 40px 40px #32c3ff inset, 0 0 0 0 #32c3ff;
+  transition: all 150ms ease-in-out;
+}
+
+.third:hover {
+  box-shadow: 0 0 10px 0 #32c3ff inset, 0 0 10px 4px #32c3ff;
+}
+
+h1 {
+  color:white;
+  font-size: 4rem;
+  text-transform: uppercase;
+  display: block;
+  width: 100%;
+
+  
+  @media screen and (max-width: 600px) {
+    font-size: 3rem;
   }
+}
+
+.logo {
+  width: 10rem;
+  margin-bottom: 5rem;
 }
