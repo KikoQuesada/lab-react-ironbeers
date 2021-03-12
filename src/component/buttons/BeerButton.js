@@ -6,7 +6,7 @@ import BeerList from '../beers/beer-list/BeerList'
 function BeerButton({ path, title }) {
     return (
         <div>
-            <Link className="text-decoration-none btn third" to={path} onClick={<BeerList />}>{title}</Link>
+            <Link className="text-decoration-none btn third" to={path}>{title}</Link>
         </div>
     )
 }

@@ -1,9 +1,11 @@
 
 import React from 'react';
 import beersService from '../../../services/beer-service'
+import Beer from '../beer/Beer';
 
-class BeerList extends React.Component() {
-    
+
+class BeerList extends React.Component {
+
     state = {
         beers: []
     }
@@ -18,14 +20,22 @@ class BeerList extends React.Component() {
     }
 
     render() {
-        
+        const { beers } = this.state;
         return (
-            <div>
-                
+
+
+            <div className="row row-cols-12 row-cols-sm-2 row-cols-md-4">
+
+                {beers.map(beer => (
+                    <div key={beer._id}><Beer key={beer._id} {...beer} /></div>
+                ))}
             </div>
+
+
         )
     }
 
 }
 
 export default BeerList;
+

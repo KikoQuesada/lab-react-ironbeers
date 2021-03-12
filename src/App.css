@@ -7,19 +7,19 @@ html, body {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
 }
-body {
+/* body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   align-content: center;
-}
+} */
 
 .btn {
   box-sizing: border-box;
   appearance: none;
   background-color: transparent;
-  border: 2px solid $red;
+  border: 2px solid red;
   border-radius: 0.6em;
   cursor: pointer;
   display: flex;
@@ -69,4 +69,34 @@ h1 {
 .logo {
   width: 10rem;
   margin-bottom: 5rem;
+}
+
+.beerCard {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: white;
+  border-radius: 1rem;
+  margin: 1rem;
+}
+
+.img-wrapper {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.btn-wrapper {
+  display: block;
+  text-align: center;
+}
+
+.view-btn {
+  width: 70%;
+  height: 40px;
+  border: none;
+  background-color: steelblue;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
 }

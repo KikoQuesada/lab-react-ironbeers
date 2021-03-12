@@ -5,7 +5,7 @@ const http = axios.create({
 });
 
 const list = () => {
-    return http.get('/beers')
+    return http.get('/')
         .then(response => response.data)
 }
 
