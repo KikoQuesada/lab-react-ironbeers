@@ -1,19 +1,11 @@
 html, body {
   margin: 0;
   padding: 0;
-  width: 100%;
-  height: 100%;
   background: #2c3e50;
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
 }
-/* body {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  align-content: center;
-} */
+
 
 .btn {
   box-sizing: border-box;
@@ -30,7 +22,6 @@ html, body {
   margin: 20px;
   padding: 1.2em 2.8em;
   text-decoration: none;
-  text-align: center;
   text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
@@ -99,4 +90,12 @@ h1 {
   color: #fff;
   font-size: 16px;
   cursor: pointer;
+}
+
+.navbar {
+  background-color: #32c3ff;
+}
+
+.navbar img{
+  width: 3rem;
 }

@@ -5,8 +5,8 @@ import logo from '../../assets/ajracsdqu5gmyfl6nai0.png'
 
 function Home() {
     return (
-        
-            <div className="d-flex flex-column align-items-center">
+       
+            <div className="mt-5 d-flex flex-column align-items-center">
 
                 <img className="logo" src={logo} alt="iron-hack" />
 
@@ -18,7 +18,7 @@ function Home() {
                 </div>
 
             </div>
-        
+       
 
     )
 }
