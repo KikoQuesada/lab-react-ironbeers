@@ -16,6 +16,7 @@ class BeerList extends React.Component {
             .catch(error => console.error(error));
     }
 
+
     render() {
         const { beers } = this.state;
         return (

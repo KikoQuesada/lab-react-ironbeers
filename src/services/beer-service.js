@@ -9,6 +9,18 @@ const list = () => {
         .then(response => response.data)
 }
 
+
+const detail = (beerId) => {
+    return http.get(`/${beerId}`)
+        .then(response => {
+            const beer = response.data
+            console.log(beer)
+        })
+}
+
+
+
 export default {
-    list
+    list,
+    detail
 }
