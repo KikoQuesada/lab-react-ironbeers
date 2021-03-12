@@ -12,10 +12,7 @@ class BeerList extends React.Component {
 
     componentDidMount() {
         beersService.list()
-            .then(beers => {
-                console.log(beers)
-                this.setState({ beers })
-            })
+            .then(beers => this.setState({ beers }))
             .catch(error => console.error(error));
     }
 

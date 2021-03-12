@@ -77,19 +77,20 @@ h1 {
   margin-bottom: 10px;
 }
 
-.btn-wrapper {
-  display: block;
-  text-align: center;
-}
+
 
 .view-btn {
-  width: 70%;
-  height: 40px;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border: 2px solid transparent;
+  border-radius: 0.6em;
   border: none;
-  background-color: steelblue;
+  background-color: #32c3ff;
   color: #fff;
+  font-weight: 700;
   font-size: 16px;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .navbar {
